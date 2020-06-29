@@ -13,6 +13,7 @@ import com.desafio.nexti.desafionexti.validators.OrderItemValidator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDate;
 import java.util.List;
 import java.util.NoSuchElementException;
 
@@ -53,6 +54,7 @@ public class OrderService {
             item.setOrder(order);
         });
 
+        order.setPurchaseDate(LocalDate.now());
         order.definePrice();
         subtractProductAmount(order.getItems());
         return orderRepository.save(order);

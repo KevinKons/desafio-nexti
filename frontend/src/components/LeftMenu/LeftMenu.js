@@ -68,14 +68,14 @@ class LeftMenu extends Component {
                             </ListItemIcon>
                         </ListItem>
                     </Link>
-                    {/*<Link to="/pedidos" className={classes.link}>*/}
-                        {/*<ListItem button key={"4"}>*/}
-                            {/*<ListItemText primary={"Pedidos"} />*/}
-                            {/*<ListItemIcon>*/}
-                                {/*<KeyboardArrowRight />*/}
-                            {/*</ListItemIcon>*/}
-                        {/*</ListItem>*/}
-                    {/*</Link>*/}
+                    <Link to="/orders" className={classes.link}>
+                        <ListItem button key={"4"}>
+                            <ListItemText primary={"Orders"} />
+                            <ListItemIcon>
+                                <KeyboardArrowRight />
+                            </ListItemIcon>
+                        </ListItem>
+                    </Link>
                 </List>
             </Grid>
         )

@@ -3,6 +3,7 @@ const api = 'http://localhost:8080/api/client';
 const headers = {
     'Content-Type': 'application/json',
     'Accept': 'application/json',
+    'Access-Control-Allow-Origin': 'http://localhost:8080',
 };
 
 export const createClient = (client) => {

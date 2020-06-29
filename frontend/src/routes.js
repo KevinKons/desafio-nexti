@@ -4,8 +4,7 @@ import { Switch, Route } from "react-router-dom";
 
 import Clients from "./components/pages/Clients";
 import Products from "./components/pages/Products";
-// import Produtos from "./components/pages/Produtos";
-// import Pedidos from "./components/pages/Pedidos";
+import Orders from "./components/pages/Orders";
 
 class Routes extends Component {
     render() {
@@ -13,8 +12,7 @@ class Routes extends Component {
             <Switch>
                 <Route exact path="/" component={Clients} />
                 <Route path="/products" component={Products} />
-                {/*<Route path="/clientes" component={Clientes} />*/}
-                {/*<Route path="/pedidos" component={Pedidos} />*/}
+                <Route path="/orders" component={Orders} />
             </Switch>
         );
     }
