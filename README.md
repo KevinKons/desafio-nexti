@@ -1,10 +1,10 @@
 ### Running the project
 
-### Backend
+#### Backend
 On the **/desafio-nexti/desafio-nexti** folder there is a jar called **desafio-nexti-0.0.1-SNAPSHOT**, you can run the program with it.
 The project is running in the 8080 port.
 
-### Frontend
+#### Frontend
 
 On the **frontend**, run `yarn install` and then run `yarn start`. The frontend will run in localhost:3000
 
