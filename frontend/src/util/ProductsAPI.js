@@ -18,7 +18,7 @@ export const createProduct = (product) => {
     return response;
 };
 
-export const listProduct = () => {
+export const listProducts = () => {
     let response = fetch(api, {headers})
         .then(res => res.json())
         .catch(() => []);

@@ -3,8 +3,6 @@ import React, { Component } from "react";
 //Redux
 import { connect } from "react-redux";
 
-// import AlterarCliente from "../../Dialogs/AlterarCliente";
-// import Notificacao from "../../Notificacao/Notificacao";
 import {
     withStyles,
     Grid,
@@ -12,10 +10,9 @@ import {
     IconButton,
     Menu,
     MenuItem,
-    Fade
 } from "@material-ui/core";
 import { MoreVert } from "@material-ui/icons";
-import {createClientAPI, deleteClientAPI, listClientsAPI} from "../../../store/actions/clients";
+import { deleteClientAPI } from "../../../store/actions/clients";
 import EditClient from "../../pages/Clients/EditClient";
 
 class Client extends Component {
@@ -151,9 +148,7 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = (dispatch) => ({
-    createClient: (client) => dispatch(createClientAPI(client)),
     deleteClient: (id) => dispatch(deleteClientAPI(id)),
-
 });
 
 export default connect(

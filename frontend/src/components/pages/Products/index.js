@@ -11,7 +11,9 @@ import {
     InputBase,
     Button
 } from "@material-ui/core";
-import {createProductAPI, listProductsAPI} from "../../../store/actions/products";
+import { createProductAPI, listProductsAPI } from "../../../store/actions/products";
+import Product from "../../commons/cards/Product";
+import RegisterProduct from "./RegisterProduct";
 
 class Products extends Component {
 
@@ -31,7 +33,7 @@ class Products extends Component {
 
     handleClose = () => {
         this.setState({ creating: false });
-        this.props.listClients();
+        this.props.listProducts();
     };
 
     render() {
